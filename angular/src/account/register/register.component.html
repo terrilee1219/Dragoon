@@ -23,6 +23,23 @@
           </mat-form-field>
           <mat-form-field>
               <input matInput
+                  name="StudentNumber"
+                  [(ngModel)]="model.studentNumber"
+                  [placeholder]="'Student Number' | localize"
+                  required
+                  maxlength="32"/>
+          </mat-form-field>
+
+          <mat-form-field>
+          <mat-label>Type of User</mat-label>
+          <mat-select [(ngModel)]="model.typeOfUser" value="Student">
+             <mat-option value="Student">Student</mat-option>
+              <mat-option value="Staff">Staff</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+          <mat-form-field>
+              <input matInput
                    type="email"
                    name="EmailAddress"
                    [(ngModel)]="model.emailAddress"
@@ -30,6 +47,14 @@
                    required
                    maxlength="255"
                    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,})+$"/>
+          </mat-form-field>
+          <mat-form-field>
+              <input matInput
+                  name="PhoneNumber"
+                  [(ngModel)]="model.phoneNumber"
+                  [placeholder]="'Phone Number' | localize"
+                  required
+                  maxlength="32"/>
           </mat-form-field>
           <mat-form-field>
               <input matInput

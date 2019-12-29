@@ -6,7 +6,8 @@ import { accountModuleAnimation } from '@shared/animations/routerTransition';
 import {
   AccountServiceProxy,
   RegisterInput,
-  RegisterOutput
+  RegisterOutput,
+  TypeOfUser
 } from '@shared/service-proxies/service-proxies';
 import { LoginService } from '../login/login.service';
 
