@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.Extensions;
+using DragoonApp.Authorization.Users;
 using DragoonApp.Validation;
 
 namespace DragoonApp.Authorization.Accounts.Dto
@@ -20,6 +21,15 @@ namespace DragoonApp.Authorization.Accounts.Dto
         [Required]
         [StringLength(AbpUserBase.MaxUserNameLength)]
         public string UserName { get; set; }
+
+        [Required]
+        [StringLength(AbpUserBase.MaxUserNameLength)]
+        public string StudentNumber { get; set; }
+
+        [Required]
+        public TypeOfUser typeOfUser;
+
+        public string PhoneNumber;
 
         [Required]
         [EmailAddress]

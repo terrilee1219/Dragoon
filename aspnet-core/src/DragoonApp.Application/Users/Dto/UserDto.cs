@@ -23,6 +23,16 @@ namespace DragoonApp.Users.Dto
         public string Surname { get; set; }
 
         [Required]
+        [StringLength(AbpUserBase.MaxSurnameLength)]
+        public string StudentNumber { get; set; }
+
+        [Required]
+        public TypeOfUser typeOfUser { get; set; }
+
+        [Required]
+        public string PhoneNumber { get; set; }
+
+        [Required]
         [EmailAddress]
         [StringLength(AbpUserBase.MaxEmailAddressLength)]
         public string EmailAddress { get; set; }

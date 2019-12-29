@@ -3,15 +3,17 @@ using System;
 using DragoonApp.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace DragoonApp.Migrations
 {
     [DbContext(typeof(DragoonAppDbContext))]
-    partial class DragoonAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191229141001_Updated User Models")]
+    partial class UpdatedUserModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
