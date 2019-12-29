@@ -37,7 +37,7 @@ namespace DragoonApp.Authorization.Users
             AbpSession = NullAbpSession.Instance;
         }
 
-        public async Task<User> RegisterAsync(string name, string surname, string emailAddress, string userName, string plainPassword, bool isEmailConfirmed)
+        public async Task<User> RegisterAsync(string name, string surname, string emailAddress, string userName, string plainPassword, bool isEmailConfirmed, string studentNumber, string phoneNumber, TypeOfUser userType)
         {
             CheckForTenant();
 
@@ -52,6 +52,9 @@ namespace DragoonApp.Authorization.Users
                 IsActive = true,
                 UserName = userName,
                 IsEmailConfirmed = isEmailConfirmed,
+                StudentNumber = studentNumber,
+                PhoneNumber = phoneNumber,
+                typeOfUser = userType,
                 Roles = new List<UserRole>()
             };
 
