@@ -76,7 +76,7 @@ namespace DragoonApp.Web.Host.Startup
             // Swagger - Enable this line and the related lines in Configure method to enable swagger UI
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new OpenApiInfo() { Title = "DragoonApp API", Version = "v1" });
+                options.SwaggerDoc("v1", new OpenApiInfo() { Title = "Dragoon API Jenkins CI", Version = "v1" });
                 options.DocInclusionPredicate((docName, description) => true);
 
                 // Define the BearerAuth scheme that's in use
