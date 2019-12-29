@@ -25,6 +25,9 @@
     <text name="UserName" value="User name" />
     <text name="Name" value="Name" />
     <text name="Surname" value="Surname" />
+    <text name="StudentNumber" value="Student Number" />
+    <text name="PhoneNumber" value="Phone Number" />
+    <text name="TypeOfUser" value="Type of User" />
     <text name="EmailAddress" value="Email address" />
     <text name="Tenants" value="Tenants" />
     <text name="SavedSuccessfully" value="Saved successfully" />
