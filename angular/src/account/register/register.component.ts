@@ -44,6 +44,8 @@ export class RegisterComponent extends AppComponentBase {
 
   save(): void {
     this.saving = true;
+    this.model.userName = this.model.studentNumber;
+    this.model.emailAddress = this.model.studentNumber+"@myuct.ac.za";
     this._accountService
       .register(this.model)
       .pipe(
