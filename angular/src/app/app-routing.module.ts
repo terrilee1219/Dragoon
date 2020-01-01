@@ -8,6 +8,7 @@ import { UsersComponent } from './users/users.component';
 import { TenantsComponent } from './tenants/tenants.component';
 import { RolesComponent } from 'app/roles/roles.component';
 import { ChangePasswordComponent } from './users/change-password/change-password.component';
+import {MatButtonModule} from '@angular/material/button'; 
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { ChangePasswordComponent } from './users/change-password/change-password
                     { path: 'update-password', component: ChangePasswordComponent }
                 ]
             }
-        ])
+        ]),
+        MatButtonModule
     ],
     exports: [RouterModule]
 })
