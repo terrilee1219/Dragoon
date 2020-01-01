@@ -13,6 +13,7 @@ export class AccountComponent extends AppComponentBase implements OnInit {
 
     versionText: string;
     currentYear: number;
+    public lottieConfig: Object;
 
     private viewContainerRef: ViewContainerRef;
 
@@ -24,6 +25,13 @@ export class AccountComponent extends AppComponentBase implements OnInit {
 
         this.currentYear = new Date().getFullYear();
         this.versionText = this.appSession.application.version + ' [' + this.appSession.application.releaseDate.format('YYYYDDMM') + ']';
+
+        this.lottieConfig = {
+            path: 'assets/images/logoAnim.json',
+            renderer: 'svg',
+            autoplay: true,
+            loop: false
+        };
     }
 
     showTenantChange(): boolean {

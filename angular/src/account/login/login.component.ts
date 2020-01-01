@@ -11,13 +11,22 @@ import { LoginService } from './login.service';
 })
 export class LoginComponent extends AppComponentBase {
   submitting = false;
+  public lottieConfig: Object;
 
   constructor(
     injector: Injector,
     public loginService: LoginService,
-    private _sessionService: AbpSessionService
+    private _sessionService: AbpSessionService,
+    
   ) {
     super(injector);
+
+    this.lottieConfig = {
+      path: 'assets/images/logoAnim.json',
+      renderer: 'svg',
+      autoplay: true,
+      loop: false
+  };
   }
 
   get multiTenancySideIsTeanant(): boolean {
