@@ -54,6 +54,7 @@ import {
 import { BlockDirective } from './directives/block.directive';
 import { BusyDirective } from './directives/busy.directive';
 import { EqualValidator } from './directives/equal-validator.directive';
+import { SideBarUserAreaComponent } from './layout/sidebar-user-area/sidebar-user-area.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -101,7 +102,8 @@ import { EqualValidator } from './directives/equal-validator.directive';
         LocalizePipe,
         BlockDirective,
         BusyDirective,
-        EqualValidator
+        EqualValidator,
+        SideBarUserAreaComponent,
     ],
     exports: [
         AbpPaginationControlsComponent,
@@ -148,6 +150,7 @@ import { EqualValidator } from './directives/equal-validator.directive';
         MatTooltipModule,
         MatTreeModule,
         ScrollingModule,
+        SideBarUserAreaComponent,
     ]
 })
 export class SharedModule {

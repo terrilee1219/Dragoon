@@ -1,6 +1,17 @@
 ﻿@import "../../bsb-theme/css/style.css";
 @import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+html {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+body{
+    overflow: scroll;
+}
+
 .content.account-forms {
     margin-top: 10px;
 }
