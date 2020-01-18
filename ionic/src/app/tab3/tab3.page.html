@@ -1,9 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Settings
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-button (click)="logout()" expand="block">
+    <ion-icon slot="start" name="log-out"></ion-icon>
+    Logout
+  </ion-button>
+</ion-content>

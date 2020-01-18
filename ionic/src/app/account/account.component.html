@@ -1,22 +1,25 @@
-﻿<div class="login-box">
-    <div class="logo">
-        <lottie-animation-view
-        [options]="lottieConfig"
-        [width]="300"
-        [height]="300">
-  </lottie-animation-view>
-    </div>
-
-    <div *ngIf="showTenantChange()" class="tenant-change-box">
-        <tenant-change></tenant-change>
-    </div>
-
-    <router-outlet></router-outlet>
-
-    <div class="row">
-        <div class="col-xs-12 text-center" style="color: #1b1b1b">
-            <small>&copy; {{currentYear}} DragoonApp. <b>{{ "Version" | localize }} </b> {{versionText}}</small>
+﻿<ion-content overflow-scroll="true">
+    <div class="login-box">
+        <div class="logo">
+            <lottie-animation-view
+            [options]="lottieConfig"
+            [width]="300"
+            [height]="300">
+    </lottie-animation-view>
         </div>
+
+        <div *ngIf="showTenantChange()" class="tenant-change-box">
+            <tenant-change></tenant-change>
+        </div>
+
+        <router-outlet></router-outlet>
+
+        <div class="row">
+            <div class="col-xs-12 text-center" style="color: #1b1b1b">
+                <small>&copy; {{currentYear}} DragoonApp. <b>{{ "Version" | localize }} </b> {{versionText}}</small>
+            </div>
+        </div>
+        
     </div>
-    
-</div>
+</ion-content>
+

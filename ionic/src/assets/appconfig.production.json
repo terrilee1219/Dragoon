@@ -1,6 +1,6 @@
 {
   "remoteServiceBaseUrl": "https://dragoonapi.pimpmybrows.co.za",
-  "appBaseUrl": "https://dragoon-app.firebaseapp.com",
+  "appBaseUrl": "http://localhost",
   "localeMappings": [
     {
       "from": "pt-BR",

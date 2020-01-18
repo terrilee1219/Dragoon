@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppAuthService } from '@shared/auth/app-auth.service';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  constructor(private _authService: AppAuthService) {}
+
+  logout(): void {
+    this._authService.logout();
+  }
 
 }
+
+

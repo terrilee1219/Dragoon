@@ -25,6 +25,7 @@ import { LoginService } from './login/login.service';
 import { TenantChangeComponent } from './tenant/tenant-change.component';
 import { TenantChangeDialogComponent } from './tenant/tenant-change-dialog.component';
 import { LottieAnimationViewModule } from 'ng-lottie';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
     imports: [
@@ -33,6 +34,7 @@ import { LottieAnimationViewModule } from 'ng-lottie';
         HttpClientModule,
         HttpClientJsonpModule,
         AbpModule,
+        IonicModule,
         SharedModule,
         ServiceProxyModule,
         AccountRoutingModule,
