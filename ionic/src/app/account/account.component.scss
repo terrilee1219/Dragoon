@@ -1,0 +1,31 @@
+﻿@import "../../bsb-theme/css/style.css";
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.content.account-forms {
+    margin-top: 10px;
+}
+
+.content.tenant-change-box {
+    padding: 16px 16px 0px 16px;
+    margin: 120px auto 0px auto;
+    max-width: 400px;
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.card {
+    border-radius: 30px;
+    margin: 10px;
+}
+
+svg {
+    transform: translate3d(15px, 0px, 0px) !important;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to top, #c9d6ff, #e2e2e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
